@@ -8,7 +8,8 @@ I'm a passionate Full-Stack Developer currently based in Prayagraj, specializing
 
 ### 👨‍💻 About Me
 
-- 💻 I'm currently working as a **Full Stack Developer** at Thought Penguin, contributing to live production projects like MoodToonz and TrackFluenz.
+- 💻 I'm currently working as a **Full Stack Developer** at Thought Penguin, contributing to live production projects like **[MoodToonz](https://moodtoonz.com)** & **[TrackFluenz](https://trackfluenz.com)**
+- 🚀 Actively contributing to production components, including marketing landing pages, referral features, and advanced sticker generation..
 - 🎓 I hold a **Master of Computer Applications (MCA)** from the Bansal Institute of Science and Technology.
 - 🚀 I have strong backend experience utilizing Node.js, Express.js, and NestJS, along with robust database management across PostgreSQL, MongoDB, and MySQL.
 - 📱 I am currently expanding my skill set by diving deep into **React Native** for mobile application development and exploring **Golang** and **AWS** for scalable backend and cloud infrastructure.
@@ -64,8 +65,8 @@ I'm a passionate Full-Stack Developer currently based in Prayagraj, specializing
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.shion.dev/api?username=surya-pmaurya&show_icons=true&theme=radium&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
-  <img height="180em" src="https://github-readme-stats.shion.dev/api/top-langs/?username=surya-pmaurya&layout=compact&theme=radium&hide_border=true&bg_color=0D1117" alt="Top Languages" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=surya-pmaurya&show_icons=true&theme=radium&hide_border=true&bg_color=0D1117&cache_seconds=86400" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=surya-pmaurya&layout=compact&theme=radium&hide_border=true&bg_color=0D1117&cache_seconds=86400" alt="Top Languages" />
 </div>
 
 ---
