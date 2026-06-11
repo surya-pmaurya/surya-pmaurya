@@ -75,14 +75,6 @@ I'm a passionate Full-Stack Developer currently based in Prayagraj, specializing
 
 ---
 
-## 🏆 GitHub Achievements
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=surya-pmaurya&theme=tokyonight&no-frame=true&row=1&column=6" alt="GitHub Trophies" />
-</p>
-
----
-
 ## 👀 Profile Views
 
 <p align="center">
