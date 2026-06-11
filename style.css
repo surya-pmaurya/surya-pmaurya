@@ -1,0 +1,913 @@
+/* ------------------ Global Styles & Color Variables ------------------ */
+
+:root {
+  /* -- New Dark & Stylish Color Palette -- */
+  --primary-bg: #1a1a2e; /* Dark Navy/Charcoal */
+  --secondary-bg: #16213e; /* Slightly lighter navy/blue for cards */
+  --text-primary: #e3e3e3; /* Light Grey/Off-white for main text */
+  --text-secondary: #a9a9a9; /* Dimmer grey for less important text */
+  --accent: #e94560; /* Vibrant Pink/Red for highlights */
+  --accent-hover: #ff7675; /* Lighter pink for hover effects */
+  --form-bg: #2a2a3e; /* Background for form inputs */
+  --white: #ffffff;
+  --error: red;
+}
+
+body.light-theme {
+  /* -- Light Theme Color Palette -- */
+  --primary-bg: #f0f2f5;
+  --secondary-bg: #ffffff;
+  --text-primary: #1c1e21;
+  --text-secondary: #65676b;
+  --accent: #d6336c; /* A slightly different pink for light mode */
+  --accent-hover: #e94560;
+  --form-bg: #e4e6eb;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-bg); /* Updated background color */
+  color: var(--text-primary); /* Updated default text color */
+}
+
+/* ================== Sticky Navbar Styles ================== */
+.main-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(14, 14, 31, 0.85); /* Semi-transparent background for a modern look */
+  -webkit-backdrop-filter: blur(10px); /* Frosted glass effect for Safari */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+body.light-theme .main-header {
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e4e6eb;
+}
+
+body.light-theme .header-text {
+  color: var(--white);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Shadow for readability */
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(image/background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo {
+  width: 60px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+}
+
+nav ul li a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--accent); /* Updated underline color */
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+#theme-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header-text {
+  margin-top: 15%;
+  font-size: 30px;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  /* Delay slightly so the navbar can load first */
+  animation-delay: 0.2s; 
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.typing-animation {
+  font-family: "Fira Code", monospace;
+  border-right: 3px solid var(--accent); /* Updated typing cursor color */
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 600;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent), #ff9a9e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  color: var(--accent); /* Fallback */
+}
+
+body.light-theme .gradient-text {
+  background: linear-gradient(90deg, var(--accent), #ff7675);
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  color: var(--accent); /* Fallback */
+}
+
+.header-description {
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-top: 20px;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+body.light-theme .header-description {
+  color: #f0f2f5;
+}
+
+.header-actions {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.btn.btn-header {
+  background: var(--accent);
+  color: var(--white);
+  border: 2px solid var(--accent);
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(246, 22, 59, 0.2);
+}
+
+.btn.btn-header:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  box-shadow: 0 6px 20px rgba(233, 69, 96, 0.4);
+  transform: translateY(-3px);
+}
+
+/* ---------------------About---------------------- */
+
+#about {
+  padding: 80px 0;
+  color: var(--text-primary); /* Updated text color for dark theme */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 80%;
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+.about-col-1:hover img {
+  transform: scale(1.1);
+}
+
+/* --------------------skills, experience and education------------------  */
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--accent); /* Updated subtitle color */
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  color: var(--accent); /* Updated tab link color */
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--accent); /* Updated tab underline color */
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50px;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: var(--accent); /* Updated highlight color */
+  font-size: 14px;
+}
+
+.tab-contents {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease; /* Changed to remove transform for a pure fade effect */
+  pointer-events: none;
+}
+
+.tab-contents.active-tab {
+  opacity: 1;
+  max-height: 500px;
+  pointer-events: all;
+}
+
+/* -------------------------Services-------------------------------- */
+
+#services {
+  padding: 30px 0;
+  color: var(--text-primary); /* Updated text color for dark theme */
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.services-list div {
+  background: var(--secondary-bg); /* Updated card background color */
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-list div a {
+  text-decoration: none;
+  color: var(--text-primary); /* Updated link color */
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.services-list div a:hover {
+  color: var(--white);
+}
+
+.services-list div:hover {
+  background: var(--accent); /* Updated card hover background */
+  transform: translate(-10px);
+}
+.services-description {
+  max-height: 4.5em;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding-bottom: 0;
+}
+.service-card.expanded .services-description {
+  max-height: 100em; /* to show full text */
+  padding-bottom: 10px;
+}
+.service-card {
+  transition: all 1s ease;
+}
+
+/* ---------------------Projects----------------------- */
+
+#projects {
+  padding: 50px 0;
+  color: var(--text-primary); /* Updated text color for dark theme */
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.extra-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease, opacity 0.5s ease;
+}
+.extra-projects.show {
+  margin-top: 50px;
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.project {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project img {
+  width: 380px;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), var(--accent)); /* Updated project overlay gradient */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--white); /* Updated text color for overlay */
+}
+
+.layer p {
+  color: var(--white); /* Set project description color to white */
+}
+
+.layer a {
+  margin-top: 20px;
+  color: var(--accent); /* Updated icon color */
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: var(--primary-bg); /* Updated icon background */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.project:hover img {
+  transform: scale(1.1);
+}
+
+.project:hover .layer {
+  height: 100%;
+}
+
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 2px solid var(--accent); /* Updated button border color */
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text-primary); /* Updated button text color */
+  background-color: var(--primary-bg); /* Updated button background */
+  transition: background 0.5s;
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+.btn:hover {
+  background: var(--accent); /* Updated button hover background */
+}
+
+/* ---------------contact us----------- */
+
+#contact {
+  padding: 20px 0;
+}
+
+.contact-left {
+  flex-basis: 35%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+
+.contact-left p i {
+  color: var(--accent); /* Updated icon color */
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.social-icon a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  margin-top: 30px;
+  color: var(--text-secondary); /* Updated icon color */
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icon a:hover {
+  color: var(--accent); /* Updated icon hover color */
+  transform: translateY(-6px);
+}
+
+.contact-right form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: var(--form-bg); /* Updated form input background */
+  padding: 15px;
+  margin: 15px 0;
+  color: var(--text-primary); /* Updated form input text color */
+  font-size: 15px;
+  border-radius: 6px;
+}
+#inputName:hover,
+#inputEmail:hover,
+#inputSubject:hover,
+#inputMessage:hover {
+  background: var(--secondary-bg); /* Updated form input hover background */
+}
+#msg {
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, color 0.3s ease;
+  min-height: 1.2em; /* Reserve space to prevent layout shift */
+}
+
+#contact-to {
+  color: var(--text-primary); /* Updated link color */
+  text-decoration: none;
+}
+#contact-to:hover {
+  color: var(--accent); /* Updated link hover color */
+}
+
+#emailError,
+#nameError,
+#msgError,
+#subjectError {
+  color: var(--error); /* Updated error message color */
+  font-size: 14px;
+  font-weight: 500;
+  display: block; /* Ensure it takes its own line */
+  margin-top: -10px; /* Position closer to the input above */
+  min-height: 1.2em; /* Reserve space to prevent layout shift */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, color 0.3s ease;
+}
+
+/* ================== Animations on Scroll =================== */
+#about,
+#services,
+#projects,
+#contact {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform; /* Performance hint for the browser */
+}
+
+#about.visible,
+#services.visible,
+#projects.visible,
+#contact.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ================== Footer Styles =================== */
+.site-footer {
+  position: relative;
+  background-color: var(--secondary-bg); /* Changed to secondary background for contrast */
+  border-top: none;
+  padding: 4rem 0 2rem;
+  text-align: center;
+  margin-top: 40px; 
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: translateY(-5px);
+}
+
+.footer-tagline {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.footer-social a {
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: var(--accent);
+}
+
+.footer-copyright {
+  color: var(--text-secondary);
+  font-size: 0.875rem; /* 14px */
+  font-weight: 200;
+}
+
+/*-------------css for small screens (mobile)---------------------*/
+
+/* Hide menu icons by default on desktop */
+nav .fa-bars,
+nav .fa-times {
+  display: none;
+}
+
+@media (max-width: 670px) {
+  #header {
+    background-image: url(image/phone-background.jpg);
+  }
+  .nav-right {
+    gap: 15px;
+  }
+  .header-text {
+    margin-top: 50%;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .header-text h1 {
+    font-size: 25px;
+  }
+  .header-actions {
+    justify-content: center;
+  }
+
+  /* Show hamburger menu icon on mobile */
+  nav .fa-bars {
+    display: block;
+    font-size: 25px;
+  }
+  .logo {
+    width: 40px;
+  }
+
+  nav ul {
+    background: var(--primary-bg); /* Updated mobile nav background */
+    position: fixed;
+    top: 0;
+    right: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s ease; /* More specific transition for smoothness */
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul.menu-open {
+    right: 0; /* Class to trigger the slide-in animation */
+  }
+
+  /* Show close icon inside mobile menu */
+  nav ul .fa-times {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-title {
+    font-size: 40px;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+  .about-col-2 {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .tab-titles {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .tab-links {
+    font-size: 16px;
+    margin: 0; /* reset margin since we are using gap now */
+    cursor: pointer;
+  }
+  .contact-left {
+    flex-basis: 100%;
+    margin-top: -90px;
+    margin-bottom: 90px;
+  }
+  .contact-right {
+    flex-basis: 100%;
+    margin-top: -90px;
+    margin-bottom: 0; /* Removed bottom margin to fix large gap before footer */
+  }
+  .project img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .extra-projects.show {
+    margin-top: 50px;
+    max-height: 1400px;
+    opacity: 1;
+  }
+}
+/* ------------------CSS for iPade or Tab---------------------------- */
+
+@media (min-width: 670px) and (max-width: 900px) {
+  #header {
+    background-image: url(image/tab-background.jpg);
+  }
+  .header-text {
+    margin-top: 40%;
+    font-size: 40px;
+  }
+
+  .header-text h1 {
+    font-size: 60px;
+  }
+  /* Show hamburger menu icon on tablet */
+  nav .fa-bars {
+    display: block;
+    font-size: 40px;
+  }
+  .logo {
+    width: 100px;
+  }
+
+  nav ul {
+    background: var(--secondary-bg); /* Updated tablet nav background */
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 100px;
+    z-index: 2;
+    transition: right 0.5s ease; /* More specific transition for smoothness */
+  }
+  .project img {
+    height: 100%;
+    width: 100%;
+  }
+
+  nav ul.menu-open {
+    right: 0; /* Class to trigger the slide-in animation */
+  }
+
+  nav ul li {
+    display: block;
+    margin: 45px;
+  }
+
+  /* Show close icon inside tablet menu */
+  nav ul .fa-times {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-title {
+    font-size: 70px;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 50px;
+  }
+  .about-col-2 {
+    font-size: 20px;
+  }
+  .tab-titles {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+  }
+  .tab-links {
+    font-size: 25px;
+    margin: 0; /* reset margin since we are using gap now */
+    cursor: pointer;
+  }
+  span b {
+    font-size: 22px;
+  }
+  .services-list {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  .services-description {
+    font-size: 20px;
+  }
+
+  .project-list,
+  .extra-projects {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  .extra-projects.show {
+    margin-top: 50px;
+    max-height: 2500px;
+    opacity: 1;
+  }
+  .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .layer h3 {
+    font-size: 25px;
+  }
+  .layer p {
+    font-size: 20px;
+  }
+
+  .contact-left {
+    flex-basis: 100%;
+    margin-top: -90px;
+    margin-bottom: 90px;
+  }
+  .contact-right {
+    flex-basis: 100%;
+    margin-top: -90px;
+    margin-bottom: 0; /* Removed bottom margin to fix large gap before footer */
+  }
+
+  #sidemenu li a {
+    font-size: 25px;
+  }
+}

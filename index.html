@@ -1,0 +1,426 @@
+<!-- ------------------My Portfolio-------------------- -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surya's Portfolio.</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/bb72798fb5.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="image/fevicon.png" type="image/png" />
+</head>
+
+<body>
+  <!-- ================== Sticky Navbar ================== -->
+  <header class="main-header">
+    <div class="container">
+      <nav>
+        <div class="nav-left">
+          <img src="image/fevicon.png" class="logo" />
+        </div>
+        <div class="nav-right">
+          <ul id="sidemenu">
+            <li>
+              <a href="#header" target="_self" rel="noopener noreferrer">Home</a>
+            </li>
+            <li>
+              <a href="#about" target="_self" rel="noopener noreferrer">About</a>
+            </li>
+            <li>
+              <a href="#services" target="_self" rel="noopener noreferrer">Services</a>
+            </li>
+            <li>
+              <a href="#projects" target="_self" rel="noopener noreferrer">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" target="_self" rel="noopener noreferrer">Contact</a>
+            </li>
+            <i class="fa-solid fa-times"></i>
+          </ul>
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================== Header Section ================== -->
+  <div id="header">
+    <div class="container">
+      <div class="header-text animate-fade-in">
+        <p><span class="typing-animation" id="typing-role"></span></p>
+        <h1>Hi, I'm <span class="gradient-text">Surya Prakash Maurya</span></h1>
+        <p class="header-description">
+          A Full-Stack Developer based in Bangalore, India. I architect and build 
+          modern, scalable, and exceptional web applications.
+        </p>
+        <div class="header-actions">
+          <a href="#contact" class="btn btn-header">Let's Connect</a>
+          <a href="#projects" class="btn btn-header">View Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================== About Section ================== -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="image/profile.jpg" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About</h1>
+          <p>
+            As a passionate software engineer, I possess a strong foundation in architecting
+            and building comprehensive full-stack applications. I specialize in engineering
+            robust backend systems utilizing Node.js, NestJS, Express.js, MySQL, and MongoDB.
+            On the frontend, I craft dynamic, highly responsive web and mobile interfaces
+            using React, React Native CLI, Tailwind CSS, and Bootstrap. Leveraging hands-on
+            experience in developing enterprise-grade e-commerce platforms and RESTful APIs,
+            I excel at translating complex technical challenges into clean, scalable, and
+            efficient code. I am deeply driven by a commitment to continuous learning and
+            applying modern technologies to deliver exceptional user experiences.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" data-tab="skills">
+              <b>Skills</b>
+            </p>
+            <p class="tab-links" data-tab="experience">
+              <b>Experience</b>
+            </p>
+            <p class="tab-links" data-tab="education">
+              <b>Education</b>
+            </p>
+            <p class="tab-links" data-tab="certifications">
+              <b>Certifications</b>
+            </p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <p>
+                  <span><b>Languages</b></span><br />
+                  Java, JavaScript, TypeScript, C 
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span><b>Frontend</b></span><br />
+                  HTML5, CSS3, Tailwind CSS, Bootstrap, React.js, Astro.js
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span><b>Backend</b></span><br />
+                  Node.js, Express.js, NestJS, REST APIs
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span><b>Mobile Development</b></span><br />
+                  React Native CLI, React Native Expo
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span><b>Databases</b></span><br />
+                  MySQL, PostgreSQL, MongoDB, RDBMS
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span><b>Tools & Architecture</b></span><br />
+                  Git, GitHub, Version Control, REST APIs, VS Code, Postman, Swagger
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <p>
+                  <span><b>Software Developer Intern | Tudip Technologies Pvt. Ltd.</b></span><br />
+                  <em>March 2025 - May 2025</em><br /><br />
+                  Developed a robust e-commerce backend to manage users, products, and offers via an admin platform.
+                  Engineered secure authentication, role-based access control, shopping cart functionality,
+                  and email-based password resets using a RESTful API architecture.<br />
+                  <b>Tech Stack:</b> Node.js, NestJS, MySQL, TypeScript.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span><b>Full Stack Developer | Thought Penguin (OPC)</b></span><br />
+                  <em>August 2025 - Present</em><br /><br />
+                  Developed and maintained full-stack applications and contributed to live production projects including MoodToonz.com and TrackFluenz.com. Building mobile application features using React Native CLI while collaborating via Git/GitHub workflows and Agile practices.<br />
+                  <b>Tech Stack:</b> React.js, Express.js, PostgreSQL, MongoDB, Node.js.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <p>
+                  <span><b>Master of Computer Applications (MCA)</b></span><br />
+                  Bansal Institute of Science and Technology, Bhopal
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span><b>Bachelor of Computer Applications (BCA)</b></span><br />
+                  Pt Mahaveer Prasad Tripathi Mahavidyalaya, Mirzapur
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span><b>Higher Secondary & Senior Secondary (HSC & SSC)</b></span><br />
+                  Gomti Inter College, Phulpur
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="certifications">
+            <ul>
+              <li>
+                <p>
+                  <span><b>Deloitte Australia Technology Job Simulation on Forage</b></span><br />
+                  <em>June 2025</em><br /><br />
+                  Completed a job simulation involving development and coding. Wrote a proposal for creating a dashboard.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================== Services Section ================== -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div class="service-card">
+          <i class="fa-solid fa-code"></i>
+          <h2>Front-End Development</h2>
+          <p class="services-description">
+            I craft visually stunning, highly responsive web applications
+            using React, Bootstrap, and Tailwind CSS. By blending elegant design
+            with flawless functionality, I deliver dynamic, pixel-perfect user
+            interfaces that provide an immersive experience across all devices.
+          </p>
+          <a href="#" class="toggle-btn">Read More</a>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-database"></i>
+          <h2>Back-End Development</h2>
+          <p class="services-description">
+            I architect resilient, scalable, and enterprise-grade server-side
+            solutions utilizing Node.js, NestJS, Express.js, MySQL, and MongoDB.
+            From robust authentication to complex API integrations, I build the
+            high-performance engines that power modern platforms.
+          </p>
+          <a href="#" class="toggle-btn">Read More</a>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Mobile App Development</h2>
+          <p class="services-description">
+            I engineer captivating, high-performance mobile experiences for both
+            iOS and Android using React Native CLI. My focus lies in delivering
+            sleek, intuitive interfaces that prioritize exceptional user
+            experience and uncompromising visual appeal.
+          </p>
+          <a href="#" class="toggle-btn">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================== Projects Section ================== -->
+
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="image/project1.jpg" />
+          <div class="layer">
+            <h3>E-Commerce Admin Backend</h3>
+            <p>
+              Built with NestJS, JWT, and MySQL includes secure login, RBAC,
+              product & offer management, and API documentation via Swagger.
+            </p>
+            <a href="https://github.com/surya-pmaurya/e-commerce-backend" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-external-link-alt"> </i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="image/project2.png" />
+          <div class="layer">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              A fully responsive HTML/CSS/JavaScript website showcasing my
+              skills, projects, and resume with a smooth UI and animations.
+            </p>
+            <a href="https://surya-pmaurya.github.io/my-portfolio/" target="_self" rel="noopener noreferrer"><i
+                class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="image/project3.png" />
+          <div class="layer">
+            <h3>Chat GPT Clone Web App</h3>
+            <p>
+              A full-stack AI chatbot built with React, Node.js, Express.js, and MongoDB, featuring a sleek UI, responsive design, and OpenAI API integration.
+            </p>
+            <a href="https://github.com/surya-pmaurya/chat-gpt-clone" target="_blank" rel="noopener noreferrer"><i
+                class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="extra-projects">
+        <div class="project">
+          <img src="image/project4.png" />
+          <div class="layer">
+            <h3>Currency Converter Web App</h3>
+            <p>A simple web app that converts currency values between different countries.</p>
+            <a href="https://github.com/surya-pmaurya/currency-converter" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="image/project5.png" />
+          <div class="layer">
+            <h3>Password Generator Web App</h3>
+            <p>A simple web app that generates secure passwords based on user-defined criteria.</p>
+            <a href="https://github.com/surya-pmaurya/password-generator" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="image/project6.png" />
+          <div class="layer">
+            <h3>Private Chat App</h3>
+            <p>A real-time, mobile-first messaging app built with Vanilla JavaScript and Firebase, featuring a sleek,
+              app-like UI inspired by popular social platforms.</p>
+            <a href="https://github.com/surya-pmaurya/private-chat" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a id="seeMoreBtn" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- ================== Contact Section ================== -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <a id="contact-to" href="mailto:mauryasurya22@gmail.com"><i
+                class="fa-solid fa-envelope"></i>mauryasurya22@gmail.com
+            </a>
+          </p>
+          <p>
+            <a id="contact-to" href="tel:+919984685507"><i class="fa-solid fa-phone"></i>+91 99846 85507
+            </a>
+          </p>
+          <div class="social-icon">
+            <a href="https://github.com/surya-pmaurya" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-square-github"></i></a>
+            <a href="https://x.com/Sunlight_3012" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/_suryamaurya_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/suryamaurya137" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="image/SuryaPrakash_CV.pdf" target="_self" rel="noopener noreferrer" download class="btn"><i
+              class="fa-solid fa-download"></i> Download Info</a>
+        </div>
+        <div class="contact-right">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="inputName" class="visually-hidden">Your Name</label>
+              <input type="text" id="inputName" name="Name" placeholder="Your Name" required />
+              <span id="nameError" class="error-text"></span>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail" class="visually-hidden">Your E-mail</label>
+              <input type="email" id="inputEmail" name="E-mail" placeholder="Your E-mail" required />
+              <span id="emailError" class="error-text"></span>
+            </div>
+            <div class="form-group">
+              <label for="inputSubject" class="visually-hidden">Subject</label>
+              <input type="text" id="inputSubject" name="Subject" placeholder="Subject" required />
+              <span id="subjectError" class="error-text"></span>
+            </div>
+            <div class="form-group">
+              <label for="inputMessage" class="visually-hidden">Your Message</label>
+              <textarea name="Message" id="inputMessage" rows="6" placeholder="Your Message" required></textarea>
+              <span id="msgError" class="error-text"></span>
+            </div>
+            <span id="msg"></span>
+            <button type="submit" class="btn">
+              <i class="fa-solid fa-paper-plane"></i> Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================== Footer =================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#header" class="footer-logo">
+          <img src="image/fevicon.png" alt="Logo" width="40" />
+        </a>
+        <p class="footer-tagline">
+          Let's connect and build something amazing together.
+        </p>
+        <div class="footer-social">
+          <a href="https://github.com/surya-pmaurya" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+              class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/suryamaurya137" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://x.com/Sunlight_3012" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+              class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/_suryamaurya_" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <nav class="footer-nav">
+          <a href="#header">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer-copyright">
+          &#169; 2025 Surya Prakash Maurya. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
