@@ -1,23 +1,23 @@
-# Hi there, I'm Surya Prakash Maurya 👋
+# Hi there, I'm Surya Prakash Maurya
 
-### Full-Stack Developer | MERN Stack | MCA Graduate 🚀
+### Full-Stack Developer | MERN Stack | MCA Graduate
 
 I'm a passionate Full-Stack Developer currently based in Prayagraj, specializing in building scalable web applications, RESTful APIs, and real-time systems. I love crafting clean, premium user interfaces—especially utilizing sleek pill-shaped elements with emojis—and developing robust backend architectures. 
 
 ---
 
-### 👨‍💻 About Me
+### About Me
 
-- 💻 I'm currently working as a **Full Stack Developer** at Thought Penguin, contributing to live production projects like **[MoodToonz](https://moodtoonz.com)** & **[TrackFluenz](https://trackfluenz.com)**
-- 🚀 Actively contributing to production components, including marketing landing pages, referral features, and advanced sticker generation..
-- 🎓 I hold a **Master of Computer Applications (MCA)** from the Bansal Institute of Science and Technology.
-- 🚀 I have strong backend experience utilizing Node.js, Express.js, and NestJS, along with robust database management across PostgreSQL, MongoDB, and MySQL.
-- 📱 I am currently expanding my skill set by diving deep into **React Native** for mobile application development and exploring **Golang** and **AWS** for scalable backend and cloud infrastructure.
-- 🌍 Outside of coding, I'm an avid fan of cricket (always tracking the IPL fixtures and those intense RCB vs GT matches!), enjoy nature and macro photography, and love keeping up with cinematic releases like *Avatar: The Last Airbender*.
+- I'm currently working as a **Full Stack Developer** at Thought Penguin, contributing to live production projects like **[MoodToonz](https://moodtoonz.com)** & **[TrackFluenz](https://trackfluenz.com)**
+- Actively contributing to production components, including marketing landing pages, referral features, and advanced sticker generation..
+- I hold a **Master of Computer Applications (MCA)** from the Bansal Institute of Science and Technology.
+- I have strong backend experience utilizing Node.js, Express.js, and NestJS, along with robust database management across PostgreSQL, MongoDB, and MySQL.
+- I am currently expanding my skill set by diving deep into **React Native** for mobile application development and exploring **Golang** and **AWS** for scalable backend and cloud infrastructure.
+- Outside of coding, I'm an avid fan of cricket (always tracking the IPL fixtures and those intense RCB vs GT matches!), enjoy nature and macro photography, and love keeping up with cinematic releases like *Avatar: The Last Airbender*.
 
 ---
 
-### 🛠️ Tech Stack & Tools
+### Tech Stack & Tools
 
 **Languages:**
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -53,7 +53,7 @@ I'm a passionate Full-Stack Developer currently based in Prayagraj, specializing
 
 ---
 
-### 🚀 Highlighted Projects
+### Highlighted Projects
 
 * **MoodToonz & TrackFluenz** - Actively contributing to production components, including marketing landing pages, referral features, and advanced sticker generation.
 * **E-Commerce Backend System** - A robust NestJS & MySQL backend with RBAC, secure JWT authentication, global exception filters, and interactive Swagger documentation.
@@ -62,7 +62,7 @@ I'm a passionate Full-Stack Developer currently based in Prayagraj, specializing
 
 ---
 
-## 📊 GitHub Statistics
+## GitHub Statistics
 
 <p align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=surya-pmaurya&show_icons=true&theme=tokyonight&hide_border=true" alt="GitHub Stats" />
@@ -75,7 +75,7 @@ I'm a passionate Full-Stack Developer currently based in Prayagraj, specializing
 
 ---
 
-## 👀 Profile Views
+## Profile Views
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=surya-pmaurya&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="Profile Views" />
@@ -83,7 +83,7 @@ I'm a passionate Full-Stack Developer currently based in Prayagraj, specializing
 
 ---
 
-### 📫 Let's Connect!
+### Let's Connect!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/suryamaurya137/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mauryasurya22@gmail.com)
